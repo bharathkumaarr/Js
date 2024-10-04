@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booleans</title>
+  </head>
+  
+  <body>
+    <script>
+        console.log(3>5);
+        console.log(5===5.000);
+        console.log(5=='5.00'); // not reccom
+
+
+        if (true) {
+          console.log('hello this if stmt is true');
+        } else {
+          console.log('hello this stmt is false');
+        }
+
+        const age = 17
+        if (age>=18) {
+          console.log('you can drive');
+        } else if(age>=16){
+          console.log('almost there!');
+        } else {
+          console.log('you can not drive');
+        }
+
+
+        //logical operators
+        console.log(true && true);
+
+        console.log(true || false);
+
+        console.log(!true);
+
+
+
+        //truthy and falsy
+        if (5) {
+          console.log('truthy');
+        }
+
+        //falsy values are - false, undefined, 0, null, NaN, ''
+
+
+        //ternary operator ?:
+        const result2 = true ? 'truthy' : 'falsy';
+        console.log(result2);
+
+
+        // guard operator &&
+        false && console.log('hello');
+
+        const msg =  5 && 'message'; 
+        console.log(msg);
+
+
+        //default opertor ||
+
+        
+
+
+
+
+
+
+
+    </script>
+    
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
