@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>7</title>
+  </head>
+  <body>
+    
+    <script>
+      function greet(name = 'hi there') {
+        console.log(`hello ${name}`);
+      }
+      greet();
+      greet('bharath')
+
+
+
+      function convertToFahrenheit(celsius) {
+        return `${(celsius*9/5)+32} F`;
+      }
+      console.log(convertToFahrenheit(25))
+
+      function convertToCelsius(Fahrenheit) {
+        return `${(Fahrenheit-32)*5/9} C`;
+      }
+      console.log(convertToCelsius(86));
+
+
+      function convertTemperature(degrees, unit){
+        if (unit === 'C') {
+          return convertToFahrenheit(degrees);
+        } else {
+          return convertToCelsius(degrees);
+        }
+      }
+      console.log(convertTemperature(25,'C'));
+      console.log(convertTemperature(77,'F'));
+
+
+      //function convertLength(length, from, to) {}
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
