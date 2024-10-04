@@ -10,36 +10,61 @@
     ">show Quantity</button>
     
     <button onclick="
-    cartQuantity++;
+
+    if (cartQuantity<10) {
+      cartQuantity++;
+    } else {
+      alert('Cart is full');
+    }
     console.log(`Cart Quantity: ${cartQuantity} `)
     ">Add to cart</button>
 
     <button onclick="
-    cartQuantity +=2;
+    if (cartQuantity<10) {
+      cartQuantity+=2;
+    } else {
+      alert('Cart is full');
+    }
     console.log(`Cart Quantity: ${cartQuantity}`);
     ">+2</button>
 
     <button onclick="
-    cartQuantity +=3;
+    if (cartQuantity<7) {
+      cartQuantity+=3;
+    } else {
+      alert('Cart is Full');
+    }
     console.log(`Cart Quantity: ${cartQuantity}`);
     ">+3</button>
 
     <button onclick="
-    cartQuantity+=4;
+    if (cartQuantity<8) {
+      cartQuantity+=4;
+    } else {
+      alert('Cart is full');
+    }
     console.log(`Cart Quantity: ${cartQuantity}`);
     ">
       +4
     </button>
 
     <button onclick="
-    cartQuantity +=5;
+    if (cartQuantity<10) {
+      cartQuantity+=5;
+    } else {
+      alert('Cart is full');
+    }
     console.log(`Cart Quantity: ${cartQuantity}`);
     ">
       +5
     </button>
 
     <button onclick="
-    cartQuantity--;
+    if (cartQuantity>0) {
+      cartQuantity--;
+    } else {
+      alert('Cart is empty');
+    }
     console.log(`Cart Quantity: ${cartQuantity}`);
     console.log('one quantity removed!');
     ">
@@ -47,14 +72,22 @@
     </button>
 
     <button onclick="
-    cartQuantity -=2;
+    if (cartQuantity>=2) {
+      cartQuantity-=2;
+    } else {
+      alert('Cart is Empty');
+    }
     console.log(`Cart Quantity: ${cartQuantity}`);
     ">
       -2
     </button>
 
     <button onclick="
-    cartQuantity -=3;
+    if (cartQuantity>3) {
+      cartQuantity-=3;
+    } else {
+      alert('Not enough items in the cart');
+    }
     console.log(`Cart Quantity: ${cartQuantity}`);
     ">
       -3
