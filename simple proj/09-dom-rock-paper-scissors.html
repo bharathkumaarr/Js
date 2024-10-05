@@ -12,15 +12,25 @@
     <button onclick="playGame('Paper')">Paper</button>
     <button onclick="playGame('Scissors')">Scissors</button>
 
+
+    <p class="js-result"></p>
+
+    <p class="js-moves"></p>
+
+    <p class="js-score"></p>
+
     <button onclick="
       score.wins = 0;
       score.loses = 0;
       score.ties = 0;
       localStorage.removeItem('score');
       alert('Score reset!')
-    ">
+      updateScoreElement();
+      ">
       Reset Score
     </button>
+
+
 
     <script>
       let score = JSON.parse(localStorage.getItem('score')) || {
@@ -28,6 +38,9 @@
         loses: 0,
         ties: 0
       };
+
+      
+      updateScoreElement();
 
       function playGame(playerMove) {
         const computerMove = pickComputerMove();
@@ -67,11 +80,24 @@
         } else if (result === 'Tie') {
           score.ties++;
         }
+       
+        updateScoreElement();
 
+        document.querySelector('.js-result')
+          .innerHTML = result;
+
+        document.querySelector('.js-moves')
+        .innerHTML = `You chose: ${playerMove} Computer chose: ${computerMove}`;
+        
         localStorage.setItem('score', JSON.stringify(score));
 
-        alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
-Wins: ${score.wins}, Losses: ${score.loses}, Ties: ${score.ties}`);
+//         alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
+// Wins: ${score.wins}, Losses: ${score.loses}, Ties: ${score.ties}`);
+      }
+
+      function updateScoreElement(){
+        document.querySelector('.js-score')
+          .innerHTML = `Wins: ${score.wins}, Losses: ${score.loses}, Ties: ${score.ties}`;
       }
 
       function pickComputerMove() {
