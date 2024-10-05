@@ -5,6 +5,7 @@
   </head>
   <body>
     <script>
+      
 
     </script>
     <button onclick="
@@ -24,14 +25,29 @@
     result = randomNumber <0.5 ? 'Heads' : 'Tails';
     const guess = 'Heads';
 
-
+    let r = '';
     // console.log(result);
 
     if (guess === result) {
       console.log('you win!')
+      r='win';
     } else {
       console.log('you lose!');
+      r='lose';
     }
+    const resultObj = {
+      wins: 0,
+      loses: 0
+    }
+
+    if (r==='win') {
+      resultObj.wins++;
+    } else {
+      resultObj.loses++;
+    }
+    console.log(resultObj);
+
+
     ">
       Flip Coin
     </button>
