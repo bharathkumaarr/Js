@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>8 amazon product</title>
+  </head>
+  <body>
+    
+    <script>
+      const product1 = {
+        name: 'basketball',
+        price: 2095 //+500
+      }
+      console.log(product1);
+
+      product1.price +=500;
+
+      console.log(product1);
+
+      product1['delivery-time'] ='3d';
+      console.log(product1);
+
+      const product2 = {
+        name: 'football',
+        price: 2795,
+        'delivery-time': '2d'
+      }
+      console.log(product2);
+
+      function comparePrice(product1,product2) {
+        if (product1.price > product2.price){
+          return `${product2.name} is less expensive`;
+        } 
+        return `${product1.name} is less expensive`;
+      }
+      console.log(comparePrice(product1,product2));
+
+
+      
+
+
+      function isSameProduct(product1,product2) {
+        if ((product1.name === product2.name) && (product1.price === product2.price)) {
+          return true;
+        } return false;
+      }
+      console.log(isSameProduct(product1,product2));
+
+
+      console.log('GoodMorning'.toLowerCase());
+
+      console.log('test'.concat('test'));
+      console.log('test'.repeat(4));
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
