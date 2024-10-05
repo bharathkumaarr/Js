@@ -6,121 +6,75 @@
   
   <body>
     <p>
-      <button onclick="
-      calculation +='1';
-      console.log(calculation);
-      ">
+      <button onclick=" calc(1) ">
         1
       </button>
       
-      <button onclick="
-      calculation+='2';
-      console.log(calculation);
-      ">
+      <button onclick=" calc(2); ">
         2
       </button>
       
-      <button onclick="
-      calculation+='3';
-      console.log(calculation);
-      ">
+      <button onclick=" calc(3); ">
         3
       </button>
       
-      <button onclick="
-      calculation+=' + ';
-      console.log(calculation);
-      ">
+      <button onclick=" calc('+'); ">
         +
       </button>
     </p>
 
     <p>
-      <button onclick="
-      calculation +='4';
-      console.log(calculation);
-      ">
+      <button onclick=" calc(4); ">
         4
       </button>
       
-      <button onclick="
-      calculation+='5';
-      console.log(calculation);
-      ">
+      <button onclick=" calc(5); ">
         5
       </button>
       
-      <button onclick="
-      calculation+='6';
-      console.log(calculation);
-      ">
+      <button onclick=" calc(6); ">
         6
       </button>
       
-      <button onclick="
-      calculation+=' - ';
-      console.log(calculation);
-      ">
+      <button onclick=" calc('-'); ">
         -
       </button>
     </p>
 
     <p>
-      <button onclick="
-      calculation +='7';
-      console.log(calculation);
-      ">
+      <button onclick=" calc(7); ">
         7
       </button>
       
-      <button onclick="
-      calculation+='8';
-      console.log(calculation);
-      ">
+      <button onclick=" calc(8); ">
         8
       </button>
       
-      <button onclick="
-      calculation+='9';
-      console.log(calculation);
-      ">
+      <button onclick="calc(9);">
         9
       </button>
       
-      <button onclick="
-      calculation+=' * ';
-      console.log(calculation);
-      ">
+      <button onclick="calc('*');">
         x
       </button>
     </p>
 
     <p>
-      <button onclick="
-      calculation +='0';
-      console.log(calculation);
-      ">
+      <button onclick="calc(0);">
         0
       </button>
+
+      <button onclick="calc('00');">
+        00
+      </button>
       
-      <button onclick="
-      calculation+='.';
-      console.log(calculation);
-      ">
+      <button onclick="calc('.');">
         .
       </button>
       
-      <button onclick="
-      calculation = eval(calculation);
-      console.log(calculation);
-      ">
-        =
-      </button>
       
-      <button onclick="
-      calculation+=' / ';
-      console.log(calculation);
-      ">
+      
+      <button onclick=" calc('/'); ">
         /
       </button>
     </p>
@@ -130,19 +84,26 @@
       calculation = '';
       console.log(calculation);
       ">clear</button>
+
+      <button onclick="
+      calculation = eval(calculation);
+      console.log(calculation);
+      ">
+        =
+      </button>
     </p>
 
     
 
 
-    
-    
-    
-    
-
 
     <script>
       let calculation = '';
+
+      function calc(opr) {
+        calculation += `${opr}`;
+        console.log(calculation);
+      }
     </script>
     
   </body>
