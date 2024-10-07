@@ -2,58 +2,28 @@
 <html>
   <head>
     <title>10</title>
-    <style>
-      body {
-        font-family: Arial;
-      }
-      .amazon-cart {
-        background-color: rgb(255,216,20);
-        padding: 10px 60px 10px 60px;
-        border: none;
-        border-radius: 30px;
-        font-size: 15px;
-        cursor: pointer;
-      }
-      .request-button {
-        background-color: rgb(0, 0, 0);
-        color: white;
-        border: none;
-        border-radius: 5px;
-        padding-right: 15px;
-        padding-left: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-weight: bold;
-      }
-      .sch-button {
-        background-color: rgb(230, 230, 230);
-        color: rgb(0, 0, 0);
-        border: none;
-        border-radius: 5px;
-        padding-right: 15px;
-        padding-left: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-weight: bold;
-
-      }
-    </style>
+    <link rel="stylesheet" href="styles/10.css">
   </head>
   <body>
     <button class="amazon-cart">Add to Cart</button>
     <p>
       <button class="request-button">Request now</button>
-      <button class="sch-button">Schedule for later</button>
+      <button class="schedule-button">Schedule for later</button>
     </p>
     <button class="js-button">Test</button>
-    
-    
-    <script>
+    <br>
+    <br>
+<p>
+  <button onclick="toggle(gamingButtonElement)" class="js-gaming-button gaming-button">Gaming</button>
+  <button onclick="toggle(musicElement)" class="js-music-button music-button">Music</button>
+  <button onclick="toggle(techElement)" class="js-tech-button tech-button">Tech</button>
 
-      const checkk = document.querySelector('.js-button')
-      console.log(checkk.classList.contains('js-button'));
-      
-       
+</p>
+    
+    
+    <script src="scripts/10.js">
+
+
     </script>
   </body>
 </html>

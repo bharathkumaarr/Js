@@ -1,0 +1,75 @@
+body {
+  font-family: Arial;
+}
+.body {
+  font-family: Arial;
+}
+.amazon-cart {
+  background-color: rgb(255,216,20);
+  padding: 10px 60px 10px 60px;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.request-button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.schedule-button {
+  background-color: rgb(230, 230, 230);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.gaming-button {
+  background-color: rgb(215, 215, 215);
+  color: black;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.music-button {
+  background-color: rgb(215, 215, 215);
+  color: black;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.tech-button {
+  background-color: rgb(215, 215, 215);
+  color: black;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.is-toggled {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
