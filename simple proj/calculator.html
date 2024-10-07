@@ -2,42 +2,7 @@
 <html>
   <head>
     <title>Calculator</title>
-    <style>
-      .body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .number {
-        height: 40px;
-        width: 40px;
-        border: none;
-        border-radius: 20px;
-        padding: 10px 10px 10px 10px;
-        margin: 1px 1px 1px 1px;
-        background-color: rgb(106, 106, 106);
-        color: white;
-      }
-      .operator {
-        height: 40px;
-        width: 40px;
-        border: none;
-        border-radius: 20px;
-        padding: 10px 10px 10px 10px;
-        margin:  0px 1px 1px 1px;
-        background-color: rgba(255, 149, 0, 0.888);
-        color: white;
-      }
-      .equals {
-        padding-right: 23px;
-        padding-left: 22px;
-        background-color: rgb(106, 106, 106);
-        color: white;
-        border: none;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius: 5px;
-        margin-right: 40px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/calculator.css">
   </head>
   
   <body>
@@ -132,13 +97,8 @@
     
 
 
-    <script>
-      let calculation = '';
-
-      function calc(opr) {
-        calculation += `${opr}`;
-        console.log(calculation);
-      }
+    <script src="scripts/calculator.js">
+      
     </script>
     
   </body>
