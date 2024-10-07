@@ -2,79 +2,115 @@
 <html>
   <head>
     <title>Calculator</title>
+    <style>
+      .body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .number {
+        height: 40px;
+        width: 40px;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 10px 10px 10px;
+        margin: 1px 1px 1px 1px;
+        background-color: rgb(106, 106, 106);
+        color: white;
+      }
+      .operator {
+        height: 40px;
+        width: 40px;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 10px 10px 10px;
+        margin:  0px 1px 1px 1px;
+        background-color: rgba(255, 149, 0, 0.888);
+        color: white;
+      }
+      .equals {
+        padding-right: 23px;
+        padding-left: 22px;
+        background-color: rgb(106, 106, 106);
+        color: white;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        margin-right: 40px;
+      }
+    </style>
   </head>
   
   <body>
     <p>
-      <button onclick=" calc(1) ">
+      <button class="number" onclick=" calc(1) ">
         1
       </button>
       
-      <button onclick=" calc(2); ">
+      <button class="number" onclick=" calc(2); ">
         2
       </button>
       
-      <button onclick=" calc(3); ">
+      <button class="number" onclick=" calc(3); ">
         3
       </button>
       
-      <button onclick=" calc('+'); ">
+      <button class="operator" onclick=" calc('+'); ">
         +
       </button>
     </p>
 
     <p>
-      <button onclick=" calc(4); ">
+      <button class="number" onclick=" calc(4); ">
         4
       </button>
       
-      <button onclick=" calc(5); ">
+      <button class="number" onclick=" calc(5); ">
         5
       </button>
       
-      <button onclick=" calc(6); ">
+      <button class="number" onclick=" calc(6); ">
         6
       </button>
       
-      <button onclick=" calc('-'); ">
+      <button class="operator" onclick=" calc('-'); ">
         -
       </button>
     </p>
 
     <p>
-      <button onclick=" calc(7); ">
+      <button class="number" onclick=" calc(7); ">
         7
       </button>
       
-      <button onclick=" calc(8); ">
+      <button class="number" onclick=" calc(8); ">
         8
       </button>
       
-      <button onclick="calc(9);">
+      <button class="number" onclick="calc(9);">
         9
       </button>
       
-      <button onclick="calc('*');">
+      <button class="operator" onclick="calc('*');">
         x
       </button>
     </p>
 
     <p>
-      <button onclick="calc(0);">
+      <button class="number" onclick="calc(0);">
         0
       </button>
 
-      <button onclick="calc('00');">
+      <button class="number" onclick="calc('00');">
         00
       </button>
       
-      <button onclick="calc('.');">
+      <button class="number" onclick="calc('.');">
         .
       </button>
       
       
       
-      <button onclick=" calc('/'); ">
+      <button class="operator" onclick=" calc('/'); ">
         /
       </button>
     </p>
@@ -83,18 +119,17 @@
       <button onclick="
       calculation = '';
       console.log(calculation);
-      ">clear</button>
+      " class="equals">clear</button>
 
       <button onclick="
       calculation = eval(calculation);
       console.log(calculation);
-      ">
+      " class="equals">
         =
       </button>
     </p>
 
     
-
 
 
     <script>
